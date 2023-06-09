@@ -1,5 +1,5 @@
-import 'package:adv_basics/data/questions.dart';
 import 'package:flutter/material.dart';
+import 'package:adv_basics/data/questions.dart';
 import 'package:adv_basics/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
@@ -15,7 +15,7 @@ class ResultsScreen extends StatelessWidget {
 
     for (var i = 0; i < chosenAnswers.length; i++) {
       summary.add({
-        'questions_index': i,
+        'question_index': i,
         'question': questions[i].text,
         'correct_answer': questions[i].answers[0],
         'user_answer': chosenAnswers[i],
